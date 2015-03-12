@@ -1,1 +1,7 @@
-JUST TRYING TO CHECK IF THE CONFIGURATION IS WORKING
+<section class="content">
+	<div class="container">
+		<div class="row">
+			Something something!
+		</div>
+	</div>
+</section>
