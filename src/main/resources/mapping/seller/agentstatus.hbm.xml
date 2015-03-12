@@ -2,3 +2,14 @@
 <!DOCTYPE hibernate-mapping PUBLIC 
  "-//Hibernate/Hibernate Mapping DTD//EN"
  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.egg.psalmsapp.sales.seller.domain.AgentStatus"
+		table="tbl_agent_status">
+		<id name="id" type="long" column="id">
+			<generator class="identity"></generator>
+		</id>
+		<property name="status" type="java.lang.String" column="status"
+			length="45"></property>
+	</class>
+</hibernate-mapping>

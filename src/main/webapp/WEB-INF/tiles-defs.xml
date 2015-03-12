@@ -12,10 +12,15 @@
 		<put-attribute name="leftPane" value="/WEB-INF/views/template/menu.jsp" />
 		<put-attribute name="content" value="" />
 	</definition>
-	
+
 	<definition name="hello" extends="mainLayout">
 		<put-attribute name="title" value="My First JSP" />
 		<put-attribute name="content" value="/WEB-INF/views/hello.jsp" />
+	</definition>
+
+	<definition name="agentStatus" extends="mainLayout">
+		<put-attribute name="title" value="Seller: Agent Status" />
+		<put-attribute name="content" value="/WEB-INF/views/seller/agentStatus.jsp" />
 	</definition>
 
 </tiles-definitions>

@@ -32,17 +32,12 @@
 	<bean id="mySessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="myDataSource" />
-		<!-- <property name="mappingResources">
+		<property name="mappingResources">
 			<list>
-				<value>mapping/buyer/corporatebuyer.hbm.xml</value>
-				<value>mapping/buyer/corporatebuyerauthorizedsignatories.hbm.xml</value>
-				<value>mapping/buyer/individualbuyer.hbm.xml</value>
-				<value>mapping/buyer/individualbuyerspouse.hbm.xml</value>
 				<value>mapping/seller/agentstatus.hbm.xml</value>
-				<value>mapping/seller/contracttype.hbm.xml</value>
-				<value>mapping/seller/corporateseller.hbm.xml</value>
 			</list>
-		</property> -->
+		</property>
+
 		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
@@ -64,5 +59,6 @@
 		<!--set false to prevent UexpectedRollbackException -->
 		<property name="globalRollbackOnParticipationFailure" value="false" />
 	</bean>
-
+	
+	<!-- <bean id="agentStatusDao" class="com.egg.psalmsapp.sales.seller.domain.dao.AgentStatusDaoImpl"/> -->
 </beans>
