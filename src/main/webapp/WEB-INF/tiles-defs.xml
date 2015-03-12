@@ -11,7 +11,6 @@
 		<put-attribute name="header" value="/WEB-INF/views/template/header.jsp" />
 		<put-attribute name="leftPane" value="/WEB-INF/views/template/menu.jsp" />
 		<put-attribute name="content" value="" />
-		<put-attribute name="footer" value="/WEB-INF/views/template/footer.jsp" />
 	</definition>
 	
 	<definition name="hello" extends="mainLayout">

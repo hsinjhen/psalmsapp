@@ -16,16 +16,17 @@
 		</div>
 	</div>
 	<div id="mainDiv">
-		<div class="menu">
-			<tiles:insertAttribute name="leftPane" />
-		</div>
-		<div id="content">
-			<tiles:insertAttribute name="content" />
-		</div>
-	</div>
-	<div id="mainFooter">
-		<div id="footer">
-			<tiles:insertAttribute name="footer" />
+		<div class="wrapper row-offcanvas row-offcanvas-left">
+			<div class="menu">
+				<aside class="left-side sidebar-offcanvas">
+					<tiles:insertAttribute name="leftPane" />
+				</aside>
+			</div>
+			<div id="content">
+				<aside class="right-side">
+					<tiles:insertAttribute name="content" />
+				</aside>
+			</div>
 		</div>
 	</div>
 </body>
