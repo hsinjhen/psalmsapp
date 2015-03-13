@@ -25,4 +25,32 @@ public class AgentStatusServiceTest {
 			System.out.println("AGENT STATUS LIST : " + a);
 		}
 	}
+	
+	@Test
+	public void createAgentStatus(){
+		AgentStatus as = new AgentStatus();
+		as.setStatus("Inactive");
+		agentStatusService.createAgentStatus(as);
+	}
+	
+	@Test
+	public void getById(){
+		AgentStatus as = agentStatusService.getAgentStatusById(new Long(1));
+		System.out.println(as);
+	}
+	
+	@Test
+	public void updateAgentStatus(){
+		AgentStatus as = agentStatusService.getAgentStatusById(new Long(2));
+		as.setStatus("Inactive");
+		agentStatusService.updateAgentStatus(as);
+		getAllAgentStatus();
+	}
+	
+	@Test
+	public void deleteAgentStatus(){
+		AgentStatus as = agentStatusService.getAgentStatusById(new Long(2));
+		agentStatusService.deleteAgentStatus(as);
+		getAllAgentStatus();
+	}
 }

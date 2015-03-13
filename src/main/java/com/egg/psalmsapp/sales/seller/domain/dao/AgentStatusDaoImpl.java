@@ -59,6 +59,7 @@ public class AgentStatusDaoImpl implements AgentStatusDao {
 		try {
 			Session session = mySessionFactory.getCurrentSession();
 			// CREATE QUERY
+
 			queryString = "FROM AgentStatus";
 			Query query = session.createQuery(queryString);
 			agentStatusList = query.list();
@@ -70,11 +71,13 @@ public class AgentStatusDaoImpl implements AgentStatusDao {
 			 * agentStatusList = criteria.list();
 			 */
 
-			// CREATE SQL QUERY
-
 			/*
+			 * // CREATE SQL QUERY
+			 * 
 			 * queryString = "SELECT * FROM tbl_agent_status"; SQLQuery sqlQuery
-			 * = session.createSQLQuery(queryString); agentStatusList =
+			 * = session.createSQLQuery(queryString);
+			 * sqlQuery.setResultTransformer(Criteria.ALIAS_TO_ENTITY_MAP);
+			 * sqlQuery.addEntity(AgentStatus.class); agentStatusList =
 			 * sqlQuery.list();
 			 */
 

@@ -34,4 +34,4 @@
 <script src="<c:url value='/js/app.js' />" type="text/javascript"></script>
 
 <!-- CUSTOM JS -->
-<script src="<c:url value='/js/sample.js '/>" type="text/javascript"></script>
+<script src="<c:url value='/js/psalmapps/agentStatus.js '/>" type="text/javascript"></script>

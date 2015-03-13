@@ -60,5 +60,5 @@
 		<property name="globalRollbackOnParticipationFailure" value="false" />
 	</bean>
 	
-	<!-- <bean id="agentStatusDao" class="com.egg.psalmsapp.sales.seller.domain.dao.AgentStatusDaoImpl"/> -->
+	<bean id="agentStatusDao" class="com.egg.psalmsapp.sales.seller.domain.dao.AgentStatusDaoImpl"/>
 </beans>
